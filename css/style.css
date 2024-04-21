@@ -128,7 +128,7 @@ justify-content: space-between;
 
 .header-link-extra{
     position: relative;
-        color: #2e2f42;
+        color: #404bbf;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -283,13 +283,14 @@ justify-content: space-between;
 
 /* Effective Solutions for Your Business */
 
-.container-image{
 
-}
+
+
 
 .hero-image {
     background-color: #2e2f42;
-    padding: 188px 0;
+    /* padding: 188px 0; */
+    padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\.jpeg);
     /*  max-width: 1440px;*/
     max-width: 320px;
@@ -1051,16 +1052,28 @@ fill: #4D5AE5;
     display: none;
 }
 
-.header-list-contacts{
-display: flex;
+.header-logo{
+    margin-right: 120px;
 }
 
 .header-list-navigation{
     display: flex;
+    
+}
+
+.header-list-contacts {
+    display: block;
 }
 
 .hero-image {
 min-width: 768px;
+}
+
+.hero-image-titel{
+    max-width: 496px;
+    padding-bottom: 36px;
+        font-size: 56px;
+        line-height: 1.07;
 }
 
 .section-first-list{
@@ -1144,8 +1157,88 @@ align-items: flex-start;
 
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1158px;
+        width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
+        margin: 0 auto;
     } 
-}
+
+        .header-div-class{
+            margin: 0 auto;
+        }
+    
+        .header-logo{
+            margin-right: 76px;
+        }
+
+    .header-list-contacts{
+        display: flex;
+        
+    }
+
+        .hero-image {
+            max-width: 1140px;
+            padding: 188px 0;
+            margin: 0 auto;
+        }
+
+
+        /* section-first */
+
+        .section-first{
+            padding: 120px 0;
+            gap: 24px;
+        }
+
+        .section-item-item{
+        width: calc((100% - 72px) / 4);
+         }
+
+        .section-icon{
+            display: flex;
+        }
+
+        .section-subtitel-subtitel{
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        /* team */
+        .container-team{
+            width: 1128px;
+            margin: 120px auto;
+        }
+
+        .section-team-list{
+            gap: 24px;
+        }
+
+        .section-team-item{
+            width: calc((100% - 72px) / 4);
+        }
+
+        /* our portfolio */
+        .section-portfolio{
+        padding-top: 120px;
+        padding-bottom: 120px;
+        }
+
+        .section-portfolio-list{
+            flex-wrap: wrap;
+            column-gap: 24px;
+            row-gap: 48px;
+        }
+
+        .section-third-item{
+            width: calc((100% - 48px) / 3);
+        }
+
+        /* footer */
+        .footer{
+            padding: 100px 0;
+        }
+
+        .container-footer{
+            
+        }
+    }
