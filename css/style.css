@@ -1133,13 +1133,6 @@ display: flex;
 align-items: flex-start;
 }
 
-.footer-link{
-}
-
-.footer-text{
-    
-}
-
 .email-form{
     display: flex;
     flex-direction: row;
@@ -1239,6 +1232,20 @@ align-items: flex-start;
         }
 
         .container-footer{
-            
+            min-width: 1440px;
+            display: flex;
+        }
+
+        .footer-second-container{
+           margin-bottom: 0;    
+            margin-right: 120px;
+        }
+
+        .email{
+            padding-left: 80px;
+        }
+
+        .social-media{
+            text-align:start;
         }
     }
