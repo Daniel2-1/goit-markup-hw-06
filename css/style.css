@@ -1178,7 +1178,7 @@ align-items: flex-start;
     }
 
         .hero-image {
-            min-width: 1140px;
+            min-width: 1440px;
             padding: 188px 0;
             margin: 0 auto;
         }
@@ -1249,7 +1249,7 @@ align-items: flex-start;
         }
 
         .logo-and-sm{
-           
+           gap: 0;
            margin-bottom: 0;
         }
         
@@ -1272,5 +1272,13 @@ align-items: flex-start;
 
         .social-media-list{
             justify-content:start;
+        }
+
+        .email-input{
+            width: 264px;
+        }
+
+        .email-form{
+            gap: 24px;
         }
     }
