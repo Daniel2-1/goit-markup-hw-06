@@ -421,7 +421,7 @@ justify-content: space-between;
 }
 .section-our-team {
     background-color: #F4F4FD;
-    padding: 76px 0;
+    padding: 96px 0;
 }
 
 .section-team-titel {
@@ -613,7 +613,7 @@ overflow: hidden;
 }
 
 .container-footer{
-  max-width: 320px;
+  min-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -1124,6 +1124,7 @@ min-width: 768px;
 
 .logo-and-sm{
     display: flex;
+
     gap: 24px;
 }
 
@@ -1159,7 +1160,14 @@ align-items: flex-start;
         .header-div-class{
             margin: 0 auto;
         }
-    
+        
+        .hero-image-titel{
+            font-size: 56px;
+            line-height: 1.07;
+            max-width: 496px;
+            padding-bottom: 48px;
+        }
+
         .header-logo{
             margin-right: 76px;
         }
@@ -1170,7 +1178,7 @@ align-items: flex-start;
     }
 
         .hero-image {
-            max-width: 1140px;
+            min-width: 1140px;
             padding: 188px 0;
             margin: 0 auto;
         }
@@ -1197,9 +1205,9 @@ align-items: flex-start;
         }
 
         /* team */
-        .container-team{
-            width: 1128px;
-            margin: 120px auto;
+        
+        .section-our-team{
+            padding: 120px 0;
         }
 
         .section-team-list{
@@ -1211,6 +1219,9 @@ align-items: flex-start;
         }
 
         /* our portfolio */
+
+        .section-our-team{}
+
         .section-portfolio{
         padding-top: 120px;
         padding-bottom: 120px;
@@ -1232,8 +1243,18 @@ align-items: flex-start;
         }
 
         .container-footer{
-            min-width: 1440px;
+            
             display: flex;
+            align-items: baseline;
+        }
+
+        .logo-and-sm{
+           
+           margin-bottom: 0;
+        }
+        
+        .container-sm{
+            margin-bottom: 0;
         }
 
         .footer-second-container{
@@ -1247,5 +1268,9 @@ align-items: flex-start;
 
         .social-media{
             text-align:start;
+        }
+
+        .social-media-list{
+            justify-content:start;
         }
     }
