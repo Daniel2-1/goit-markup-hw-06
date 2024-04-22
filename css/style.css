@@ -291,13 +291,26 @@ justify-content: space-between;
     background-color: #2e2f42;
     /* padding: 188px 0; */
     padding: 72px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\.jpeg);
     /*  max-width: 1440px;*/
     max-width: 320px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
+}
+
+@media screen and (min-width:320px){
+    .hero-image{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob.jpeg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+    .hero-image{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob-2x.jpeg);
+    }
+    }
 }
 
 .hero-image-titel {
@@ -1069,6 +1082,21 @@ fill: #4D5AE5;
 min-width: 768px;
 }
 
+@media screen and (min-width:768px) {
+.hero-image{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpeg);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-image{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab-2x.jpeg);
+    }
+}
+    
+}
+
 .hero-image-titel{
     max-width: 496px;
     padding-bottom: 36px;
@@ -1144,6 +1172,12 @@ align-items: flex-start;
     align-content: start;
 }
 
+ /* modal */
+ .modal {
+     width: 408px;
+     min-height: 584px;
+ }
+
 
 }
 
@@ -1181,6 +1215,21 @@ align-items: flex-start;
             min-width: 1440px;
             padding: 188px 0;
             margin: 0 auto;
+        }
+
+        @media screen and (min-width:1158px){
+        .hero-image{
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpeg);
+        }
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        .hero-image{
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpeg);
+        }
+        }
+
         }
 
 
@@ -1281,4 +1330,5 @@ align-items: flex-start;
         .email-form{
             gap: 24px;
         }
+
     }
