@@ -1185,7 +1185,7 @@ align-items: flex-start;
 
 @media screen and (min-width: 1158px) {
     .container {
-        width: 1158px;
+        min-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
@@ -1212,7 +1212,7 @@ align-items: flex-start;
     }
 
         .hero-image {
-            min-width: 1440px;
+            max-width: 1440px;
             padding: 188px 0;
             margin: 0 auto;
         }
@@ -1258,6 +1258,8 @@ align-items: flex-start;
         .section-our-team{
             padding: 120px 0;
         }
+
+        .container-team{}
 
         .section-team-list{
             gap: 24px;
